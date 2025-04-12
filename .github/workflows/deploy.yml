@@ -12,7 +12,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-          npm-version: 8 # Or your preferred version
+          npm-version: check-latest
       - name: Install Dependencies
         run: npm install
       - name: Build
