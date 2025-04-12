@@ -242,5 +242,5 @@ awk '/error/' log.txt
 - **Print unique values from a column**
 
   ```bash
-  awk '!seen[$1]++' file
+  awk '!a[$1]++' file
   ```
