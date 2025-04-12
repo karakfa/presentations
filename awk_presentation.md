@@ -13,6 +13,7 @@
   - Lightweight
   - Built into Unix/Linux
   - Efficient for processing structured text
+  - Familiar C-style syntax
 
 ---
 
