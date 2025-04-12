@@ -9,6 +9,7 @@
   - AWK is a powerful text-processing language.
   - Named after its creators: **A**ho, **W**einberger, and **K**ernighan.
   - Often used for data extraction and reporting.
+  - Originally written in **1977** and distributed with Version 7 Unix.
 - **Why use AWK?**
   - Lightweight
   - Built into Unix/Linux
