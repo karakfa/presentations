@@ -1,7 +1,22 @@
+# awk
 
 ---
 
-## marp: true paginate: true theme: default
+# Motivation
+
+- After this presentation you will be able to write
+  - One letter program to replace **cat**
+  - An advanced calculator 
+   ```bash
+     $ calc "sqrt(10)*sin(30)+exp(3.14*2.71)"
+   ```
+  - A better **uniq**
+  - Sort tables with headers
+
+- Qualification
+  *According to stackoverflow.com, world's 7th leading expert* :) 
+
+---
 
 # Introduction to AWK
 
@@ -142,7 +157,7 @@ awk -F, '{ print $1, $2 }' file.csv
 ```
 
 ```awk
-BEGIN { FS=":" } { print $1, $2 }
+BEGIN { FS="," } { print $1, $2 }
 ```
 
 ---
@@ -187,6 +202,19 @@ awk '/error/' log.txt
 
 # Appendix: Handy AWK One-Liners
 
+- **Print every line (same a cat)**
+
+  ```bash
+  awk 1 file [files...]
+  ```
+
+- **One line calculator**
+  
+  ```bash
+  function calc() { awk "BEGIN{print $@}"; }
+  calc "sqrt(10)"
+  ```
+  
 - **Print first field of every line**
 
   ```bash
@@ -246,3 +274,10 @@ awk '/error/' log.txt
   ```bash
   awk '!a[$1]++' file
   ```
+
+- **Sort tables with header**
+
+  ```bash
+  awk 'NR==1; {print | "sort"}' file
+  ```
+
