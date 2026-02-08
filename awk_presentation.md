@@ -13,8 +13,15 @@
   - A better **uniq**
   - Sort tables with headers
 
-- Qualification
-  *According to stackoverflow.com, world's 7th leading expert* :) 
+
+---
+
+# What Makes Me Qualified?
+
+- Long time user (circa 1988)
+-  *According to stackoverflow.com, world's 7th leading expert* :) 
+- "I will become the best in the entire Tri-State Area!" 
+![Doofenshmirtz](doofenshmirtz.jpg)
 
 ---
 
