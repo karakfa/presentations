@@ -18,10 +18,9 @@
 
 # What Makes Me Qualified?
 
-- Long time user (circa 1988)
--  *According to stackoverflow.com, world's 7th leading expert* :) 
-- "I will become the best in the entire Tri-State Area!" 
-![Doofenshmirtz](doofenshmirtz.jpg)
+- Long time and avid user (circa 1988)
+<img width="400" height="400" alt="image" src="stackoverflow_rankings_with_dr.png" />
+
 
 ---
 
@@ -252,13 +251,13 @@ awk '/error/' log.txt
   awk '{ print NF }' file
   ```
 
-- **Replace "foo" with "bar"**
+- **Replace "foo" with "bar" (here *sed* is better)**
 
   ```bash
   awk '{ gsub(/foo/, "bar"); print }' file
   ```
 
-- **Print last field of each line**
+- **Print last field of each line (something *cut* can't do alone)**
 
   ```bash
   awk '{ print $NF }' file
@@ -285,6 +284,6 @@ awk '/error/' log.txt
 - **Sort tables with header**
 
   ```bash
-  awk 'NR==1; {print | "sort"}' file
+  awk 'NR==1; NR>1{print | "sort"}' file
   ```
 
